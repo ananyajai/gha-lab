@@ -19,3 +19,5 @@ jobs:
       - run: python hello.py
 
       - run: python myreverse.py
+
+      - run: pytest test_myreverse.py
