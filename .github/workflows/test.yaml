@@ -13,8 +13,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
 
-      - uses: actions/checkout@v2 
+      - run: python -m pip install pytest
+
+      - run: python hello.py
 
       - run: python myreverse.py
 
